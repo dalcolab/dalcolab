@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dal Co lab</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/jpg" href="media/favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Responsive option -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS adjustments -->
+    <link href="css/mystyles.css" rel="stylesheet">
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar1">
+
+
+<!-- Video header ================================================== -->
+    <div id="video-section" class="embed-responsive embed-responsive-16by9">
+      <div id="videoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <a href="#about-section">
+              <img src="media/dalcolab_large.png" alt="dalcolab" class="videoImage">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="9000">
+            <video id="header-video-1" autoplay loop muted>
+                <source src="videos/video_analysisAuxotrophs.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item" data-bs-interval="16000">
+            <video id="header-video-2" autoplay loop muted>
+                <source src="videos/video_microfluidics.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item" data-bs-interval="20000">
+            <video id="header-video-3" autoplay loop muted>
+                <source src="videos/video_gradientStrepHigh.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+<!-- Navigation bar ================================================== -->
+    <nav id="navbar1" class="navbar navbar-expand-lg sticky-top navbar-light bg-white border-bottom border-2 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#video-section">
+          <img src="media/dalcolab.png" width="89" height="30" alt="Dal Co lab">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#joinus-section">Join us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#people-section">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events-section">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications-section">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar1" data-bs-offset="40" tabindex="0">
+
+
+<!-- About section ================================================== -->
+    <span class="anchor" id="about-section"></span>
+    <div id="about-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+          <h1 class="display-4 fw-bold lh-1">About.</h1>
+            <p>Welcome to the Dal Co lab at the University of Lausanne, Switzerland. We are part of the <a href="http://unil.ch/dbc">Department of Computational Biology</a>, and of the <a href="https://nccr-microbiomes.ch/">Swiss National Centre of Competence in Research for Microbiomes</a>. We are hiring a Postdoc. Read about how to <a href="#joinus-section">Join us</a>!
+ 
+            <p><strong>We study how functionality arises in biological systems</strong>. Our group is interested in a variety of systems, from microbial communities to organs. We investigate principles that drive multicellular organization and function. We do single cell experiments with microbial communities and we collaborate with groups working on other multicellular systems. We build computational models to uncover how interactions between single cells drive collective behavior and function.</p>
+
+            <p><strong>Our group is interested in microbial ecology</strong>. A first central question in our research is: Can we predict the dynamics of microbial systems if we know how the individual cells interact? We address this question with single-cell experiments and modeling. We measure how single cells interact inside microbial communities, often using microscopy and microfluidics. We model these communities as systems composed of parts - the cells - that interact in space. With these models, we elucidate how properties of microbial communities (e.g. collective metabolism, response to environmental fluctuations and stresses) arise from the interactions that we observe between the single cells.</p>
+
+            <p><strong>Our group is interested in collective behaviour</strong>. A second central question in our research is: How are cells programmed to produce specific multicellular behaviour? This question applies to both multicellular microbial systems and multicellular organisms. Multicellular microbial systems and multicellular organisms may share general organisational principles. We use modeling to infer which physical and biological interactions between cells are required to achieve target collective behaviours. Our group combines machine learning approaches with single-cell experimental data to understand and engineer collective behaviour. We are excited to collaborate with experimental groups working on different systems.</p>
+
+            <p><strong>We are interdisciplinary</strong>. We love interdisciplinary work. If you are a microbe—or a person—it’s often not good to be surrounded by individuals just like you. This is a nice lesson from our work on interactions between bacterial cells <a href="https://go.nature.com/2Sf2ZH6">(read what's behind our work)</a>. We believe that connecting disciplines is crucial for understanding any system of a certain complexity. For example, the properties of a society -studied by social scientists- arise from the properties of its components, the individuals -studied by psychologists; the properties of an atom -studied by chemists- arise from the properties of its elementary components -studied by particle physicists. Connecting fields generally unlocks tremendous scientific potential. We connect disciplines to elucidate how complex biological systems function.</p>
+        </div>      
+      </div>
+    </div>
+
+
+<!-- Join us section ================================================== -->
+    <span class="anchor" id="joinus-section"></span>
+    <div id="joinus-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+          <h1 class="display-4 fw-bold lh-1">Join us.</h1>
+
+          <p>Our group at the University of Lausanne, headed by Prof. Alma Dal Co, studies the dynamics and function of multicellular systems with modeling and experimental approaches.  Candidates at all levels should have a good quantitative background. We greatly value curiosity, creativity, and drive to discover and learn new things. If you're interested in joining us, write to <a href="mailto:alma.dalco@unil.ch">alma.dalco@unil.ch.</a></p>
+          
+          <p><font color="blue"><big><strong>We are hiring a Postdoc! Apply by 30.09.2022.</strong></big> We look for a postdoc with a background in physics, engineering, or related disciplines, to work on an exciting research project. The goal of the project is to create a revolutionary cure to type 1 diabetes. Type 1 diabetes is caused by autoimmune destruction of ß-cells that produce insulin. An emerging cure is the transplantation of ß-cells. We collaborate with experimental groups at the university of Geneva to develop organoids composed by ß-cells and immunomodulatory cells, which can both produce insulin and repress immune attacks. 
+          Your contribution is to develop models of these insulin-secreting organoids to help designing them, working with the first exciting microscopy data of these organoids. You will also have the chance to work on other projects. You should have experience with modeling, programming and possibly working with images. To apply, write to <a href="mailto:alma.dalco@unil.ch">alma.dalco@unil.ch.</a> including a letter describing why you are interested, a CV, and the names of 2 or 3 referees.</font></p>
+
+          <p><strong>Master students</strong>. You can contact us via email  describing why you are interested in doing your master thesis in our group. </p>
+       
+          <p><strong>PhD students</strong>. We are not hiring PhD students at the moment but we will have a position available soon. If you are interested in joining us, you can send us a letter describing why you are interested in joining our group, your CV, and the names of three referees.</p>
+
+          <p><strong><big>Research Projects</big></strong> are available in two major research areas. <strong>1) Interactions in microbial communities</strong>. Microbial communities perform fundamental processes on Earth. Microbial communities in the soil and the sea cycle the elements, and microbial communities in our gut shape our health. The processes that these microbial communities perform arise from interactions between different species. Our goal is to uncover the network of interaction in these systems and understand how collective processes arise. We measure interactions with single-cell experimental techniques, including microscopy and microfluidics. We build mathematical models to elucidate how the activities of the single cells and their interactions drive community properties such as growth, response to environmental fluctuations and stresses. We have projects with synthetic and natural communities. <strong>2) Programming collective behavior of cells</strong>. Cells have the intrinsic ability to self-organize into functional assemblies. A central question is how cells are programmed to grow into these functional assemblies. We model physical and biological interactions occurring in multicellular systems and use machine learning methods to uncover which cell-to-cell interactions lead to specific collective behaviour. We build our models on single-cell data in collaborations with experimental labs working on organs and tissues.</p>
+          
+         <p><strong><big>We offer</big></strong> an inspiring working environment with very competitive salaries. Our group fosters collaborative and interdisciplinary work. We offer great creative freedom and we provide opportunities for career and personal development. Switzerland offers high life-style and fantastic nature. Our lab strives to having members with a diversity of backgrounds and identities. We believe this diversity fosters creativity.</p>
+
+        </div>      
+      </div>
+    </div>
+    
+
+<!-- People section ================================================== -->
+    <span class="anchor" id="people-section"></span>
+    <div id="people-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+          <h1 class="display-4 fw-bold lh-1">People.</h1>
+          
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <img src="media/photo_alma.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Alma" width="250" height="250">
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Alma Dal Co</h5>
+                <h5 class="card-title">Group Leader</h5>
+                <p class="card-text"><small class="text-muted">My name is Alma Dal Co. I come from Venice, in Italy. I am a Physicist into microbes, ecology, collective behaviour. I am a scientist with horizontal, rather then vertical, scientific interests. I am generally interested in the dynamics of complex biological systems, such as multicellular organisms and microbial communities. My main question is how the functionality of these systems arises from interactions between their members. My work combines experiments with modeling. If I am not in the office, I am at the piano. If I am not at the piano, I am under water spearfishing.</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col-md-4 order-md-1">
+              <img src="media/photo_karol.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Karol" width="250" height="250">
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Karol Piera</h5>
+                <h5 class="card-title">PhD student</h5>
+                <p class="card-text"><small class="text-muted">I was born and raised in Cracow, where I also completed my BSc in Molecular Biology. For my MSc in Neuroscience I moved to Germany, Netherlands and subsequently to Switzerland where I started my PhD in Quantitative Biology. I have keen interest in studying the role of space in various biological systems. My projects have two-fold focus: on hand I try to better understand cell-to-cell interactions in spatial communities while on the other I hope to engineer them using syntethic biology tools. I am currently working with microbial communities using a combination of live fluorescent microscopy, microfluidics, optogenetics and computational methods.</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <img src="media/photo_alessia.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Alessia" width="250" height="250">
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Alessia Del Panta</h5>
+                <h5 class="card-title">PhD student</h5>
+                <p class="card-text"><small class="text-muted">My name is Alessia Del Panta, and I was trained as a Physicist in Rome and in Zürich. What excited me the most about Physics was the study of many-body systems and emergent phenomena. Next to the passion for Physics, however, I always harbored a strong fascination for the mechanisms behind the life of a cell. In the group of Alma Dal Co, I combine my interests in Physics and Biology by studying collective behavior in microbial communities. I use microfluidics experiments to observe and quantify the response of single cells within a community, and mathematical modeling to make hypotheses about the main organizing principles.</small></p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="row mt-3">
+            <div class="col-md-4 order-md-1">
+              <img src="media/Guilhem_Panneau_cropped.png" class="rounded-circle d-block mx-auto img-fluid" alt="Guilhem" width="250" height="250" >
+            </div>
+          
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Guilhem Panneau</h5>
+                <h5 class="card-title">PhD student</h5>
+                <p class="card-text"><small class="text-muted">My name is Guilhem Panneau, and I am originally from the North West of France. I trained as a biosciences engineer in Lyon, specializing in quantitative biology. Indeed, my main interest is to model complex biological systems to understand their functioning better. During my prior research work in Sweden, I dissected intra-tumor heterogeneity to identify common driver alterations targetable by therapies and limit treatment resistance. In the Dal Col Lab, I combine computational methods and evolutionary experiments to investigate how bacteria can evolve to invest metabolic resources to benefit other unrelated cells. In particular, I grow and study bioengineered strains that are adhesive and auxotrophic of our beloved E. coli.</small></p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <img src="media/photo_francesco.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Francesco" width="250" height="250">
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Francesco Mottes</h5>
+                <h5 class="card-title">Postdoc</h5>
+                <p class="card-text"><small class="text-muted">I am a physicist by training, with a strong interest in computer science and a fascination for how complex systems represent, process and use information. Without any doubt, biology offers some of the most fascinating case studies in this respect. During my PhD I studied the evolution of human gene regulatory networks and how randomness influences the internal representations of artificial neural networks. I recently joined the lab of Prof. Dal Co, where different aspects of my background are coming together with the aim of modelling, understanding and engineering collective cell behaviour.</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col-md-4 order-md-1">
+              <img src="media/photo_julien.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Julien" width="250" height="250">
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title h3">Julien Luneau</h5>
+                <h5 class="card-title">Postdoc</h5>
+                <p class="card-text"><small class="text-muted">My name is Julien Luneau. I am a French crop scientist with interests in plant pathogens. During my PhD at the Laboratory of Plants-Microbes-Environment Interactions (Toulouse, France), I studied the fitness determinants in the Xanthomonas bacterial pathogen during early phases of plant infection using genomics approaches. Currently, my research focuses on pathogen ecology at the single-cell level. I combine synthetic biology, microfluidics, microscopy and mathematical modeling to understand the role of collective behaviors during host infection and disease development. As a member of the NCCR Microbiomes, I also study how short-range interactions between bacteria improve their tolerance to antibiotics.</small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>      
+      </div>
+    </div>
+
+
+<!-- Events section ================================================== -->
+    <span class="anchor" id="events-section"></span>
+    <div id="events-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+          <h1 class="display-4 fw-bold lh-1">Events.</h1>
+          
+          <div class="row mt-3">
+            <table class="table">
+              <tbody>
+                <thead>
+                  <td><strong><big>Talks 2022</big></strong></td>
+                  <td></td>
+                  <td></td>
+                </thead>
+                
+                
+                <tr>
+                  <td>January 19-21</td>
+                  <td><strong>Invited talk</strong><br><a href="https://www.youtube.com/watch?v=nib0dFv-qPA">Watch!</a></td>
+                  <td><a href="https://santafe.edu/events/constructing-and-deconstructing-collectives-signals-space-society">Constructing and Deconstructing Collectives</a><br>Santa Fe Institute, US</td>
+                </tr>
+                <tr>
+                  <td>April 9-10</td>
+                  <td><strong>Invited talk</strong></td>
+                  <td><a href="https://evenium-site.com/site/edilb-journees-thematiques-9-10-avril-2022/programme;jsessionid=YLnVsqj2DM9POIzD89C8H4DA.gl1?pg=programme">Physics of Living Systems Across Scales</a><br>INSERM, Paris</td>
+                </tr>
+                <tr>
+                  <td>May 8-13</td>
+                  <td>We are teaching!</td>
+                  <td><a href="https://www.sib.swiss/training/course/20220508-MICRO">School Bioinformatics and Computational Approaches in Microbiology</a><br>Swiss Intitute of Bioinformatics</td>
+                </tr>
+                <tr>
+                  <td>May 16-20</td>
+                  <td><strong>Talk</strong></td>
+                  <td><a href="https://workshops.evolbio.mpg.de/event/43/">Communities and Coevolution Meeting</a><br>Max Planck Institute for Evolutionary Biology, Germany</td>
+                </tr>
+                         <tr>
+                  <td>June 9-13</td>
+                  <td><strong>Invited talk</strong></td>
+                  <td><a href="https://asm.org/Events/ASM-Microbe/Home">American Society for Microbiology Meeting</a><br>Washington DC, US</td>
+                </tr>
+                <tr>
+                  <td>June 6-24</td>
+                  <td>We are organizing!</td>
+                  <td><a href="https://indico.ictp.it/event/9799/">Eco-evolutionary Dynamics of Microbial Communities Workshop</a><br>International Center for Theoretical Physics, Italy</td>
+                </tr>
+                <tr>
+                  <td>July 8</td>
+                  <td><strong>Invited talk</strong><br><a href="https://adras81.bitbucket.io/">Join Online!</a></td>
+                  <td><a href="https://adras81.bitbucket.io/">Population Dynamics Seminars</a><br>The University of Edinburgh, UK</td>
+                </tr>
+                 <tr>
+                  <td>August 15-19</td>
+                  <td><strong>Invited talk</strong></td>
+                  <td><a href="https://isme18.isme-microbes.org/">ISME: 18th International Symposium on Microbial Ecology</a><br>Lausanne, Switzerland</td>
+                </tr>
+                <tr>
+                  <td>October 10-14</td>
+                  <td><strong>Invited talk</strong></td>
+                  <td><a href="https://meetings.embo.org/event/21-microbial-communities">EMBO Workshop on Microbial Communities</a><br>Corse</td>
+                </tr>
+                    <tr>
+                  <td>October 17-21</td>
+                  <td><strong>Invited talk</strong></td>
+                  <td><a href="https://www.csh.ac.at/">Workshop on Collective Resiliance Across Scales</a><br>Complexity Science Hub, Vienna, Austria</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="fw-bold lh-1">Lab Retreat 2022</h4>
+          <div class="row mt-3">
+            <p>Our lab went on a Joint Retreat in the Swiss Alps with the group of <a href="https://vanvlietlab.ch/">Simon van Vliet</a> and <a href="https://micro.biol.ethz.ch/people/person-detail.html?persid=122262">Markus Arnoldini</a>.</p>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6 p-2">
+              <img src="media/retreat2022_all.jpg" class="img-fluid" alt="retreat2022_all">
+            </div>
+            <div class="col-md-6 p-2">
+              <img src="media/retreat2022_talk.jpg" class="img-fluid" alt="retreat2022_talk">
+            </div>
+         </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+<!-- Publication section ================================================== -->
+    <span class="anchor" id="publications-section"></span>
+    <div id="publications-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+          <h1 class="display-4 fw-bold lh-1">Publications.</h1>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_plosComBio2022.png" alt="paper_plosCompBio2022" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Global dynamics of microbial communities emerge from local interaction rules</h5>
+                  <p class="card-text">S. van Vliet<sup>*</sup>, C. Hauert, K. Fridberg, M. Ackermann, A. Dal Co<sup>*</sup> </p>
+                  <p class="card-text"><strong>PLoS Computational Biology</strong> (2022)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1371/journal.pcbi.1009877">DOI: 10.1371/journal.pcbi.1009877</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_natComm2021.jpg" alt="paper_natComm2021" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Short-range quorum sensing controls horizontal gene transfer at micron scale in bacterial communities</h5>
+                  <p class="card-text">J. van Gestel<sup>*1</sup>, T. Bareia<sup>*1</sup>, B. Tenennbaum, A. Dal Co, P Guler, N. Aframian, S. Puyesky, I. Grinberg, G. D’Souza, Z.Erez, M. Ackermann, A. Eldar<sup>*</sup></p>
+                  <p class="card-text"><strong>Nature Communications</strong> (2021)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1038/s41467-021-22649-4">DOI: 10.1038/s41467-021-22649-4</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_science2020.jpg" alt="paper_science2020" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tracing cell trajectories in a biofilm</h5>
+                  <p class="card-text">A. Dal Co &amp; M. P. Brenner<sup>*</sup></p>
+                  <p class="card-text"><strong>Science</strong> (2020)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1126/science.abd1225">DOI: 10.1126/science.abd1225</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_natEcoEvol2020.jpg" alt="paper_natEcoEvol2020" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Short-range interactions govern cellular dynamics in microbial multi-genotype systems</h5>
+                  <p class="card-text">A. Dal Co<sup>*</sup>, S. van Vliet, D. Kiviet, S. Schlegel &amp; M. Ackermann</p>
+                  <p class="card-text"><strong>Nature Ecology and Evolution</strong> (2020)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1038/s41559-019-1080-2">DOI: 10.1038/s41559-019-1080-2</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_philTraRoySocB2019.jpg" alt="paper_philTraRoySocB2019" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Emergent microscale gradients give rise to metabolic cross-feeding and antibiotic tolerance in clonal bacterial populations</h5>
+                  <p class="card-text">A. Dal Co<sup>*,1</sup>, S. van Vliet<sup>*,1</sup> &amp; M. Ackermann</p>
+                  <p class="card-text"><strong>Philos. Trans. of the Royal Society B</strong> (2019)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1098/rstb.2019.0080">DOI: 10.1098/rstb.2019.0080</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_jRoySocInt2019.jpg" alt="paper_jRoySocInt2019" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Metabolic activity affects response of single cells to a nutrient switch in structured populations</h5>
+                  <p class="card-text">A. Dal Co<sup>*</sup>, M. Ackermann &amp; S. van Vliet<sup>*</sup></p> 
+                  <p class="card-text"><strong>Journal of the Royal Society Interface</strong> (2019)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1098/rsif.2019.0182">DOI: 10.1098/rsif.2019.0182</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_eLift2018.jpg" alt="paper_eLift2018" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Metabolism: Division of labor in bacteria</h5>
+                  <p class="card-text">A. Dal Co<sup>*</sup>, C. Brannon &amp; M. Ackermann</p>
+                  <p class="card-text"><strong>eLife</strong> (2018)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.7554/eLife.38578">DOI: 10.7554/eLife.38578</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_cellSys2018.jpg" alt="paper_cellSys2018" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Local interactions lead to spatially correlated gene expression levels in bacterial groups</h5>
+                  <p class="card-text">S. van Vliet<sup>*</sup>, A. Dal Co, A. R. Winkler, S. Spriewald, B. Stecher &amp; M. Ackermann</p>  
+                  <p class="card-text"><strong>Cell Systems</strong> (2018)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1016/j.cels.2018.03.009">DOI: 10.1016/j.cels.2018.03.009</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_plosGenet2017.jpg" alt="paper_plosGenet2017" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cell-to-cell variation and specialization in sugar metabolism in clonal bacterial populations</h5>
+                  <p class="card-text">N. Nikolic<sup>*</sup>, F. Schreiber, A. Dal Co, D.J. Kiviet, T. Bergmiller, S. Littmann, M. Kuypers &amp; M. Ackermann</p>
+                  <p class="card-text"><strong>PLOS Genetics</strong> (2017)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1371/journal.pgen.1007122">DOI: 10.1371/journal.pgen.1007122</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_nature2017.jpg" alt="paper_nature2017" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">High-avidity IgA protects the intestine by enchaining growing bacteria</h5>
+                  <p class="card-text">K. Moor, M. Diard, M.E. Sellin, B. Felmy, S.Y. Wotzka, A. Toska, E. Bakkeren, M. Arnoldini, F. Bansept,  A. Dal Co,  T.Völler, A. Minola, B. Fernandez-Rodriguez, G. Agatic, S. Barbieri, L. Piccoli, C. Casiraghi, D. Corti, A. Lanzavecchia, R.R. Regoes, C. Loverdo, R. Stocker, D.R. Brumley<sup>*</sup>, W.D. Hardt<sup>*</sup> &amp; E. Slack<sup>*</sup></p> 
+                  <p class="card-text"><strong>Nature</strong> (2017)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1038/nature22058">DOI: 10.1038/nature22058</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="media/paper_nucAcRes2017.jpg" alt="paper_nucAcRes2017" class="d-block mx-auto img-fluid" width="250">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Stochastic timing in gene expression for simple regulatory strategies</h5>
+                  <p class="card-text">A. Dal Co, M. C. Lagomarsino, M. Caselle &amp; M. Osella<sup>*</sup></p>
+                  <p class="card-text"><strong>Nucleic Acids Research</strong> (2017)</p>
+                  <p class="card-text"><small class="text-muted"><a href="https://doi.org/10.1093/nar/gkw1235">DOI: 10.1093/nar/gkw1235</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <sup>*</sup> corresponding author, <sup>1</sup> equal contributions
+
+        </div>      
+      </div>
+    </div>
+
+ 
+<!-- Contact section ================================================== -->
+    <span class="anchor" id="contact-section"></span>
+    <div id="contact-section" class="container mt-5">
+      <div class="row px-3 px-lg-5 rounded-3 border shadow">
+        <div class="col py-5 mx-lg-5">
+
+          <h1 class="display-4 fw-bold lh-1">Contact.</h1>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <p><strong>Address</strong><br>
+                University of Lausanne<br>
+                Department of Computational Biology<br>
+                Office 1015.1<br>
+                Genopode building<br>
+                1015 Lausanne<br>
+                Switzerland</p>
+
+              <p><strong>Email</strong><br>
+                alma.dalco@unil.ch
+              </p>
+              
+              <p><strong>Phone</strong><br>
+                +41 (0)21 692 53 78
+              </p>
+            </div>
+
+            <div class="col">
+              <img src="media/photo_alma2.jpg" class="rounded-circle d-block mx-auto img-fluid" alt="Alma" width="250" height="250">
+
+              <p class="text-center"></p>
+
+              <p class="text-center"><a href="https://twitter.com/Alma_DalCo" tjarget="_blank">Twitter</a></p>
+
+              <p class="text-center"><a href="https://scholar.google.ch/citations?user=WZldRLMAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+            </div>
+          </div>
+
+          <table class="table">
+            <tbody>
+              <thead>
+                <td><strong>Short CV</strong></td>
+                <td></td>
+              </thead>
+              <tr>
+                <td>Since 09.2021</td>
+                <td>Assistant Professor, University of Lausanne</td>
+              </tr>
+              <tr>
+                <td>2019-21</td>
+                <td>Postdoctoral Fellow, Harvard University, group of Michael Brenner</td>
+              </tr>
+              <tr>
+                <td>2014-19</td>
+                <td>PhD in Systems Biology, ETH Zurich, group of Martin Ackermann</td>
+              </tr>
+              <tr>
+                <td>2012-14</td>
+                <td>M.Sc. Physics of Complex Systems, University of Turin</td>
+              </tr>
+              <tr>
+                <td>2008-11</td>
+                <td>B.Sc. Physics, University of Padua</td>
+              </tr>
+              <tr>
+                <td>2002-12</td>
+                <td>Piano Master Degree, Conservatory of Venice</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- PAUSE VIDEO -->
+    <script>
+    </script> 
+
+  </body>
+</html>

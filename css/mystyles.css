@@ -1,0 +1,63 @@
+/* BODY -------------------------------------------------- */
+body {
+/*  margin: 0px; */
+  position: relative;  
+}
+
+/* HEADER -------------------------------------------------- */
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.videoImage {
+  width: 100%; 
+  display: block;
+}
+
+/* NAVBAR -------------------------------------------------- */
+.navbar {
+  background: #FFF;
+}
+
+span.anchor {
+    margin-top: -54px; /* height of nav, in this case 54px */
+    display: block;
+    height: 54px; /* height of nav, in this case 54px */
+    visibility: hidden;
+    position: relative;
+}
+
+
+/* Bootstrap notes ================================================ 
+* Two types of containers:
+  - container       = fixed width (which we use)
+  - container-fluid = full width
+* Standard fixed width is ~1320 px, but when screen does not allow it width gets smaller. 
+* Once it reaches a lower threshold width, it starts placing columns below each other. This threshold is set using: 
+  - container-sm  540px (standard, which we use)
+  - container-md 
+  - container-lg 
+  - container-xl 
+  - container-xxl 1320px
+
+* my-5                  = margin top&bottom : 5 
+* p-4                   = padding all sides : 4
+* pb-0                  = padding botoom    : 0
+* pe-lg-0               = padding right when > 992px : 0 
+* pt-lg-5               = padding top when > 992px : 5
+* align-items-center    = 
+* rounded-3             = rounded corners of border
+* border                = show border
+* shadow-lg             = show shadow, in this case a large one
+
+* col-lg-10             = ?
+* mx-auto               = margin left&right : auto
+* pb-4                  = padding bottomr : 4
+
+* display-4             = display size : 4 (1 is largest)
+* fw-bold               = font weight : bold
+* lh-1                  = line height : 1
+      
+================================================ */
